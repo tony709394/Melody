@@ -31,7 +31,7 @@ Memories are precious and so is data.
 
 <p align="center"><img src="https://raw.githubusercontent.com/tony709394/Melody/main/Images/autoload.png" align="center"></p>
 
->  **Note:** After running the scenario, the storage path is displayed in the console.
+>  **Note:** After running the scene, the storage path is displayed in the console.
 > 
 > <img src="https://raw.githubusercontent.com/tony709394/Melody/main/Images/notification.png" align="center">
 

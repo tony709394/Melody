@@ -17,6 +17,8 @@ Memories are precious and so is data.
 
 - Various types of data are allocated to separate storage partitions and do not affect each other
 
+- Encryption mode support
+
 ## Install
 
 > Godot 3.0+ is supported.
@@ -65,6 +67,23 @@ var success = Melody.struct.clean()
 ```
 
 ## API
+
+### Melody.encrypt
+
+- Description: Set the global password and set it only once. When this method is called, all read and write operations are self-encrypted
+
+- Output: `Boolean`
+
+- Input: `String`
+
+- Usage:
+
+```
+var success = Melody.encrypt("123456")
+print(success)
+```
+
+> **Suggestion:** Provide a unique password for each user to prevent hackers from easily reading files
 
 ### Melody.scn.SET
 

@@ -6,6 +6,15 @@ onready var node_inserted = $Node
 
 func _ready():
 	pass
+	
+#	# true
+#	var success1 = Melody.encrypt("123456")
+#	print(success1)
+#
+#	# false
+#	# Global password can only be set once to prevent previously saved files from being unreadable
+#	var success2 = Melody.encrypt("654321")
+#	print(success2)
 
 
 func _input(event):

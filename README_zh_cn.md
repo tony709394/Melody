@@ -17,6 +17,8 @@ Godot 库，用于本地数据持久化。该仓库灵感源于 `玉置浩二` �
 
 - 各种类型的数据 分配至独立的存储分区，互不影响
 
+- 支持加密模式
+
 ## 安装
 
 > 支持 Godot 3.0+
@@ -65,6 +67,23 @@ var success = Melody.struct.clean()
 ```
 
 ## API
+
+### Melody.encrypt
+
+- 描述: 设置全局密码，且只能设置一次。调用该方法后，所有读写操作自带加密
+
+- 输出: `Boolean`
+
+- 输入: `String`
+
+- 用法:
+
+```
+var success = Melody.encrypt("123456")
+print(success)
+```
+
+> **建议:** 为每个用户提供专属密码，防止黑客轻松读取文件。
 
 ### Melody.scn.SET
 
